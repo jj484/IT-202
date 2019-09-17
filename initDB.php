@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 98469d06d10f30ea32fd03766d7d38b49b94b36f
 <?php
 #turn error reporting on
 ini_set('display_errors',1);
