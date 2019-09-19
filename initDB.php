@@ -32,7 +32,7 @@ try{
 
 
 	$stmt = $db->prepare($select_query);
-	$r = $stmt->execute(array(":username"=> "Billy"));
+	$r = $stmt->execute(array(":username"=> "Vanessa"));
 	$results = $stmt->fetch(PDO::FETCH_ASSOC);
 
 	echo "<pre>" . var_export($results, true) . "</pre>"; 
