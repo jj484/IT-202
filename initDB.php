@@ -27,6 +27,8 @@ try{
 
 	echo "<br>" . ($r>0?"Insert successful":"Insert failed") . "<br>";
 
+	$select_query = "select * from `TestUsers` where username = :Vanessa";
+
 }
 catch(Exception $e){
 	echo $e->getMessage();
