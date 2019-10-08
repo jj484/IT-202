@@ -49,18 +49,3 @@ function Concatenate($in1, $in2){
 
 ?>
 
-<html>
-<br>
-<br>
-<br>
-  <body>
-    <p>
-      <ol>
-          <li>Implement adding two or more query parametes together. (i.e., Number1 and Number2) Do proper checks/handling in case the passed values aren't actually numbers.</li>  
-          <li>Concatenate two or more parameter's values and echo them.</li>
-          <li>Try passing two parameters with the same name but different values, note and record the results.</.li>
-          <li>Try passing a parameter with a value containg various special characters, note and record the results.</li>
-      </ol>
-    </p>
-  </body>
-</html>

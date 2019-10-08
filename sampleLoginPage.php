@@ -1,0 +1,50 @@
+<?php
+  $username =  $_POST["username"];
+  $password =  $_POST["password"];
+  $confirmPassword =  $_POST["confirmPassword"];
+  
+  if($password == $confirmPassword){
+    echo "YOUR PASSWORDS ARE THE SAME";
+  }
+  else{
+    echo "YOUR PASSWORDS ARE DIFFERENT";
+      $username =  null;
+      $password =  null;
+  }
+?>
+
+<html>
+  <body>
+  <form method="post">
+      Username: <br>
+      <input type="text" name="username"> <br>
+      Password: <br>
+      <input type="password" name="password"> <br>
+      Confirm Password: <br>
+      <input type="password" name="confirmPassword"> <br>
+      
+      <br>
+      YOUR PASSWORD IS: <?php echo $_POST["password"]; ?> <br>
+      <br>
+      YOUR CONFIRM PASSWORD IS: <?php echo $_POST["confirmPassword"]; ?> <br>
+      
+      <br> <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
+
+    
+
+<!---
+DONE (1 pt) Must have username field
+DONE (1 pt) Must have password field with proper masking
+DONE (1 pt) Include a "confirm password" field
+DONE? (1 pt) Form should POST to the same script
+DONE (1 pt) Script should handle the parameters and show it on the screen as a sample
+DONE (2 pt) Don't let the form submit if "password" doesn't match "confirm password"
+DONE? (1 pt) This may be done in JS or php for now, but in the future both should verify
+DONE (1 pt) Attach screenshot of results
+DONE (1 pt) Attach link to NJIT site location
+DONE (1 pt) Attach github link to the file
+--->
