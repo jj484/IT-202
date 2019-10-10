@@ -15,7 +15,7 @@
 
 <html>
   <body>
-  <form method="POST" onsubmit="return validate();">
+  <form method="post" action="#" onsubmit="return validate();">
       Username: <br>
       <input type="text" name="username" placeholder="enter a username"> <br>
       Password: <br>
