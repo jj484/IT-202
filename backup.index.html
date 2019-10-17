@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	function queryParam(){
+		var params = new URLSearchParams(location.search);
+		if(params.has('page')){
+			var page = params.get('page');
+			var ele = document.getElementById(page);
+			if(ele){
+				let home = document.getElementById('home');
+				let about = document.getElementById('about');
+				home.style.display="none";
+				about.style.display = "none";
+				ele.style.display = "block";
+			}
+		}
+		else{
+			let home = document.getElementById('home');
+			home.style.display = "block";
+		}
+	}
+</script>
+</head>
+<body onload="queryParam();">
+	<header>
+		<nav> <!--
+			<a href="?page=home">1</a><a href="?page=about">2</a>
+		      -->
+			<!--Create route for Home--><a href="?page=home">Home</a>
+			<!--Create route for About--><a href="?page=about">About</a>
+		</nav>
+	</header>
+	<div id="home">
+		<p>This is home</p>
+		<p>
+			<iframe width="420" height="315"
+			src="https://www.youtube.com/embed/cPCLFtxpadE?autoplay=1?playlist=cPCLFtxpade&look=1">
+			</iframe>
+		</p>
+
+	</div>
+	<div id="about">
+		<p>
+		<!-- About page using HTML5 Semantics-->
+		This is about
+		</p>		
+
+		<script>
+		alert("POCKET SAND");
+		</script>
+
+		<p>
+		<bdp dir="rtl"> Brooklyn Bridge </bdo><br>
+		<img alt="Brooklyn Bridge" width="500" height="500" src="https://images.unsplash.com/photo-1441823120971-04969db3f294?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80">
+		<br>
+		</p>			
+
+		<p>
+		<aside>
+		<details>
+		<summary>Words of Wisdom</summary>
+		<ol>
+			<li>"If I steal something, please, remember it was mine"</li>
+			<li>"Just because I ordered, doesn't mean I can't look at the menu."</li>
+			<li>"There's so much oxygen that I forgot to breathe"</li>
+			<li>"If this were a contract I wouldn't sign"</li>
+			<li>"Drinking all the moisture from the air, I am so dry, Let me get a sip of what you want me to say, I am so thirsty"</li>
+			<li>"It has to be a unaimous determination because one opinion would be a pointless appreciation"</li>
+		</ol>
+		</aside>
+		</p>
+		</details>
+
+		
+	</div>
+	<footer> <p>Site By: Jaysen Javier <br>
+		 <a href="?page=home">Return to home</a></p> </footer>
+</body>
+</html>
+
+
+
+<!--
+DONE Utilize the template on github
+DONE (2 pt) Create nav elements for Home and About
+^ They should route appropriately per the function in the template using the query parameter "page".
+(1 pt) Fill in the About section with appropriate HTML5 semantic elements (and pre-html5 elements)
+(5 pts, 1 each) Use a combination of at least 5 different tags
+(1 pt) Link to NJIT site
+(1 pt) Link to Github
+-->
