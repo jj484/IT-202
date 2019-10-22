@@ -5,6 +5,7 @@
 
 
   <a href="backup.index.html?page=home"> Home + About Page </a> <br>
+  <a href="game.html"> Game </a> <br>
   <a href="https://web.njit.edu/~at633"> Aaron </a> <br>
   <a href="https://web.njit.edu/~zmt6"> Zack </a> <br>
   <a href="https://web.njit.edu/~wc347"> Alan </a> <br>
