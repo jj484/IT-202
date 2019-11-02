@@ -7,8 +7,32 @@
   -->
 </html>
 
-<?php
+/*
 
+ALTERNATIVE METHOD I GOT WORKING!
+ISN'T WHAT IS CURRENTLY LIVE ON THE SITE
+***HELPED ZACH BY USING MY CODE BELOW
+
+<?php
+require('config.php');
+$conn_string = "mysql:host=$host;dbname=$database;charset=utf8mb4";
+
+$db = new PDO($conn_string, $username, $password);
+
+$stm = $db->query("select * from users");
+$result = $stm->fetch();
+echo $result['username'];
+
+if ($result['username'] == $_POST['usernameLog'] && $result['password'] == $_POST['passwordLog'] )
+{
+  echo "Login Succeded";
+}
+else {
+  echo "Login Failed";
+}  
+
+*/
+  
 
 	$username = $_POST['usernameLog'];
 	$password = $_POST['passwordLog'];
@@ -38,7 +62,6 @@
 		else {
 			echo "Login Failed";
 		}
-  
 
 		
 		?>  
