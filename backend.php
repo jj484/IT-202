@@ -14,6 +14,11 @@ function get_sample_users(){
 	}
 	return $response;
 }
+
+
+
+
+
 if(isset($_POST["type"])){
 	$type = $_POST["type"];
 	$response = "nothing";
