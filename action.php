@@ -1,4 +1,15 @@
+<html>
+
+  <!--
+    RECEIVED HELP FROM NEVIN B
+    AND FROM ONLINE TUTORIAL FOUND AT:
+    https://www.youtube.com/watch?v=arqv2YVp_3E
+  -->
+</html>
+
 <?php
+
+
 	$username = $_POST['usernameLog'];
 	$password = $_POST['passwordLog'];
   
